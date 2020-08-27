@@ -1,0 +1,88 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  overflow: hidden;
+}
+.map{
+  background-image:url('./worldmap.jpg');
+  background-size: cover;
+  height: 82vh;
+  width:100vw;
+  position: relative;
+}
+.title{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+.title h3{
+  font-size:2.5em;
+}
+#info-india{
+  display: flex;
+  position: absolute;
+  top:58vh;
+  left:63vw;
+}
+#info-india h6{
+  background-color:white;
+}
+.controlls{
+  display: flex;
+  justify-content: center;
+}
+#info-france{
+  display: flex;
+  position: absolute;
+  top:46vh;
+  left:47vw;
+}
+#info-france h6{
+  background-color:white;
+}
+.controlls button{
+  height:3.5em;
+  width:10em;
+  margin-top: 5px;
+  background-image: linear-gradient(orange,white,green);
+  font-size:1em;
+  font-weight:bold;
+}
+#launchsuccess{
+  position: absolute;
+  top:40%;
+  left:25%;
+  visibility: hidden;
+}
+#launchsuccess h2{
+  color:brown;
+  font-size:2em;
+}
+.aeroplane{
+  background-image: url('./jet.png');
+  background-size: 30px 20px;
+  height:20px;
+  width:30px;
+  position: absolute;
+  top:49vh;
+  left:48vw;
+  /* top:61vh;
+  left:66vw; */
+}
+.jetanimate{
+  animation:jet 2s linear;
+}
+
+@keyframes jet{
+  0%{
+    top:49vh;
+    left:48vw;
+  }
+  100%{
+    top:61vh;
+    left:66vw;
+  }
+
+}
